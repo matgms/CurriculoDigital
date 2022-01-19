@@ -1,0 +1,227 @@
+/* GERAL */
+html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.container
+	
+.row
+
+.column
+
+.column--esquerda
+.column--direita
+
+.hidden{
+	display: none;
+}
+
+
+/* BODY */
+body
+
+input:checked ~ main{
+	background-color: #4F4F4F;
+}
+input:checked ~ main .column--direita{
+	background-color: 	#708090;
+}
+input:checked ~ main .informacoesContatoPortifolio__descricao{
+	color: #F0F8FF;
+}
+input:checked ~ main section, input:checked ~ main section p{
+	color: #F0F8FF;
+}
+input:checked ~ main .informacoesContatoPortifolio__trocarModo label span{
+	transform: translateX(30px);
+}
+input:checked ~ footer{
+	background-color:#363636;
+}
+
+
+
+/* PAGINA INICIAL */
+main{
+	background-color: #B0C4DE;
+}
+main .container{
+	width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main .container--column{
+	padding: 30px;
+}
+main .row
+main .column
+
+main .column--esquerda
+main .column--direita{
+	background-color: #FFFFFF;
+}
+
+.informacoesContatoPortifolio
+.informacoesContatoPortifolio__imagem{
+	text-align: center;
+}
+.informacoesContatoPortifolio__imagem img{
+	width: 100%;
+    max-width: 160px;
+    border-radius: 100%;
+}
+
+.informacoesContatoPortifolio__descricao{
+	text-align: center;
+}
+.informacoesContatoPortifolio__descricao h1{
+	font-size: 1.5rem;
+}
+.informacoesContatoPortifolio__descricao h2{
+	font-weight: normal;
+	font-size: 14px;
+}
+.informacoesContatoPortifolio__descricao ul{
+	margin-top: 20px;
+}
+.informacoesContatoPortifolio__descricao ul li{
+	margin-bottom: 10px;
+}
+.informacoesContatoPortifolio__descricao ul li a{
+	font-size: 14px;
+    color: inherit;
+}
+
+.informacoesContatoPortifolio__trocarModo{
+	margin-top: 30px;
+}
+.informacoesContatoPortifolio__trocarModo label{
+	width: 50px;
+    height: 20px;
+    display: block;
+    background-color: #708090;
+    border-radius: 20px;
+    padding: 4px;
+    margin: 0 auto;
+}
+.informacoesContatoPortifolio__trocarModo label span{
+	width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 0px;
+	transition: all ease-in-out .4s;
+}
+
+section{
+	padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #C0C0C0;
+}
+section h2{
+	font-size: 1.3rem;
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+section p{
+	    font-size: 14px;
+		color: #696969;
+		line-height: 22px;
+}
+section ul
+section ul li{
+	margin-bottom: 10px;
+}
+section ul li p
+section ul li a
+section ul li h3
+section ul li strong{
+	font-weight: 500;
+    font-size: 14px;
+}
+
+.informacoesExperienciaPortifolio{
+	margin-left: 25px;
+    margin-right: 10px;
+}
+
+.informacoesExperienciaPortifolio__perfil
+.informacoesExperienciaPortifolio__perfil h2
+.informacoesExperienciaPortifolio__perfil p
+
+.informacoesExperienciaPortifolio__especialidades
+.informacoesExperienciaPortifolio__especialidades h2
+.informacoesExperienciaPortifolio__especialidades ul
+.informacoesExperienciaPortifolio__especialidades ul li
+.informacoesExperienciaPortifolio__especialidades ul li p
+
+.informacoesExperienciaPortifolio__formacao
+.informacoesExperienciaPortifolio__formacao h2
+.informacoesExperienciaPortifolio__formacao ul
+.informacoesExperienciaPortifolio__formacao ul li
+.informacoesExperienciaPortifolio__formacao ul li p
+
+.informacoesExperienciaPortifolio__experiencia{
+	margin-bottom: 0;
+    border: none;
+}
+
+.informacoesExperienciaPortifolio__experiencia h2
+.informacoesExperienciaPortifolio__experiencia ul
+.informacoesExperienciaPortifolio__experiencia ul li{
+	margin-bottom: 30px;
+}
+.informacoesExperienciaPortifolio__experiencia ul li h3
+.informacoesExperienciaPortifolio__experiencia ul li strong
+.informacoesExperienciaPortifolio__experiencia ul li p
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+	background-color: #4682B4;
+    padding: 30px;
+}
+
+.redesSociais
+.resesSociais__lista{
+	text-align: center;
+}
+.redesSociais__lista__item{
+	display: inline-block;
+    margin: 0 5px;
+}
+.redesSociais__lista__item a
+.redesSociais__lista__item img{
+	width: 100%;
+    max-width: 20px;
+}
+
+
+
+
+/* @MEDIA QUERY */
+@media screen and (min-width: 768px) {
+	main .row{
+		display: flex;
+    flex-flow: row wrap;
+	}
+	main .column--esquerda{
+		flex-basis: 45%;
+	}
+	main .column--direita{
+		flex-basis: 55%;
+	}
+}
