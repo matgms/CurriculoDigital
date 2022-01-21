@@ -82,6 +82,8 @@ main .column--direita{
 	width: 100%;
     max-width: 160px;
     border-radius: 100%;
+	border: solid;
+	border-color: #C0C0C0;
 }
 
 .informacoesContatoPortifolio__descricao{
